@@ -29,4 +29,9 @@ $(document).ready(function () {
             });
         });
     });
+
+    $('.js-change-color').on('change', function () {
+        var color = $(this).find('option:selected').data('change-color');
+        $(this).find('.dropdown-toggle').removeClass('btn-primary btn-secondary btn-success btn-warning btn-danger').addClass(color);
+    });
 });
