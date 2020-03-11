@@ -1285,6 +1285,28 @@
                                     <option>Relish</option>
                                 </select>
                             </div>
+
+                            <div class="col-lg-3 my-1">
+                                <label>Custom</label>
+                                <select class="selectpicker" data-live-search="true">
+                                    <option data-content="<div class='select-products'><div class='image'><img src='https://cdn.tobi.com/product_images/lg/1/plum-maddie-asymmetrical-bodycon-dress.jpg' height='50' /></div><div class='info'><span class='title'>Pink dress</span><span class='price'>$35.99</span></div></div>"></option>
+                                    <option data-content="<div class='select-products'><div class='image'><img src='https://cdn.tobi.com/product_images/lg/1/plum-maddie-asymmetrical-bodycon-dress.jpg' height='50' /></div><div class='info'><span class='title'>Pink dress dress dress dress dress</span><span class='price'>$35.99</span></div></div>"></option>
+                                    <option data-content="<div class='select-products'><div class='image'><img src='https://cdn.tobi.com/product_images/lg/1/plum-maddie-asymmetrical-bodycon-dress.jpg' height='50' /></div><div class='info'><span class='title'>Pink dress</span><span class='price'>$35.99</span></div></div>"></option>
+                                    <option data-content="<div class='select-products'><div class='image'><img src='https://cdn.tobi.com/product_images/lg/1/plum-maddie-asymmetrical-bodycon-dress.jpg' height='50' /></div><div class='info'><span class='title'>Pink dress</span><span class='price'>$35.99</span></div></div>"></option>
+                                    <option data-content="<div class='select-products'><div class='image'><img src='https://cdn.tobi.com/product_images/lg/1/plum-maddie-asymmetrical-bodycon-dress.jpg' height='50' /></div><div class='info'><span class='title'>Pink dress</span><span class='price'>$35.99</span></div></div>"></option>
+                                </select>
+                            </div>
+
+                            <div class="col-lg-3 my-1">
+                                <label>Custom</label>
+                                <select class="selectpicker js-change-color" data-style="btn-success">
+                                    <option data-change-color="btn-success">Publish</option>
+                                    <option data-change-color="btn-warning">Unpublish</option>
+                                    <option data-change-color="btn-secondary">Mark as Spam</option>
+                                    <option data-change-color="btn-danger">Delete</option>
+                                </select>
+
+                            </div>
                         </div>
                         <br/>
                         <br/>
@@ -1955,7 +1977,14 @@
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="grunt/plugins/jquery-3.4.1.min.js"></script>
 <script src="grunt/dist/plugins/js/plugins.js"></script>
-
+<script>
+    $(document).ready(function () {
+        $('.js-change-color').on('change', function () {
+            var color = $(this).find('option:selected').data('change-color');
+            $(this).find('.dropdown-toggle').removeClass('btn-primary btn-secondary btn-success btn-warning btn-danger').addClass(color);
+        });
+    });
+</script>
 
 </body>
 </html>

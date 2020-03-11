@@ -7919,6 +7919,10 @@ hr {
 
 .btn-warning,
 .btn-warning:hover,
+.btn-warning:focus,
+.btn-warning.focus,
+.btn-warning:active,
+.btn-warning.active,
 .btn-warning.disabled,
 .btn-warning:disabled {
   color: #fff; }
@@ -7971,7 +7975,9 @@ hr {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' style='width:24px;height:24px' viewBox='0 0 24 24'%3E%3Cpath fill='%23ff4f52' d='M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z' /%3E%3C/svg%3E"); }
 
 .bootstrap-select .dropdown-toggle::after {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' style='width:24px;height:24px' viewBox='0 0 24 24'%3E%3Cpath fill='%23999999' d='M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z' /%3E%3C/svg%3E");
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' style='width:24px;height:24px' viewBox='0 0 24 24'%3E%3Cpath fill='%23999999' d='M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z' /%3E%3C/svg%3E");
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' style='width:24px;height:24px' viewBox='0 0 24 24'%3E%3Cpath fill='%23999999' d='M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z' /%3E%3C/svg%3E");
+  background-color: #cfcfcf;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: contain;
@@ -7979,20 +7985,22 @@ hr {
   height: 21px;
   border: 0; }
 .bootstrap-select .dropup .dropdown-toggle::after {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' style='width:24px;height:24px' viewBox='0 0 24 24'%3E%3Cpath fill='%23999999' d='M7.41,15.41L12,10.83L16.59,15.41L18,14L12,8L6,14L7.41,15.41Z' /%3E%3C/svg%3E");
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' style='width:24px;height:24px' viewBox='0 0 24 24'%3E%3Cpath fill='%23999999' d='M7.41,15.41L12,10.83L16.59,15.41L18,14L12,8L6,14L7.41,15.41Z' /%3E%3C/svg%3E");
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' style='width:24px;height:24px' viewBox='0 0 24 24'%3E%3Cpath fill='%23999999' d='M7.41,15.41L12,10.83L16.59,15.41L18,14L12,8L6,14L7.41,15.41Z' /%3E%3C/svg%3E");
+  background-color: #cfcfcf;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: contain;
   width: 21px;
   height: 21px;
   border: 0; }
-.bootstrap-select .dropdown-toggle {
+.bootstrap-select .dropdown-toggle:not(.btn-primary):not(.btn-secondary):not(.btn-info):not(.btn-success):not(.btn-warning):not(.btn-danger) {
   background-color: #fff;
   border: 1px solid #cfcfcf;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none; }
-.bootstrap-select.show .dropdown-toggle {
+.bootstrap-select.show .dropdown-toggle:not(.btn-primary):not(.btn-secondary):not(.btn-info):not(.btn-success):not(.btn-warning):not(.btn-danger) {
   background: #fff;
   border-color: #4592ff;
   -webkit-box-shadow: none;
@@ -8084,6 +8092,12 @@ hr {
 .bootstrap-select.show-tick .dropdown-menu li a span.text {
   margin-left: 34px;
   margin-right: 0px !important; }
+.bootstrap-select .btn.btn-primary, .bootstrap-select .btn.btn-info, .bootstrap-select .btn.btn-success, .bootstrap-select .btn.btn-warning, .bootstrap-select .btn.btn-danger {
+  color: #fff; }
+  .bootstrap-select .btn.btn-primary:after, .bootstrap-select .btn.btn-info:after, .bootstrap-select .btn.btn-success:after, .bootstrap-select .btn.btn-warning:after, .bootstrap-select .btn.btn-danger:after {
+    background-color: #fff; }
+.bootstrap-select .btn.btn-secondary:after {
+  background-color: #212529; }
 
 .irs--flat .irs-line {
   height: 5px !important; }
@@ -8114,5 +8128,35 @@ hr {
     border-radius: 100%; }
   .irs--flat .irs-handle.to i:first-child {
     margin-left: -15px; }
+
+.select-products {
+  margin: 0; }
+  .select-products :after {
+    clear: both;
+    display: block;
+    content: ''; }
+  .select-products .image, .select-products .info {
+    float: left; }
+  .select-products .image {
+    width: 50px; }
+    .select-products .image img {
+      width: 45px;
+      height: 45px; }
+  .select-products .info {
+    width: calc(100% - 50px);
+    color: #555555;
+    padding-left: 10px;
+    position: relative;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; }
+    .select-products .info .title {
+      display: block;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis; }
+    .select-products .info .price {
+      display: block;
+      font-weight: bold; }
 
 /*# sourceMappingURL=main.css.map */
