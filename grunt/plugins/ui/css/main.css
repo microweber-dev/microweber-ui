@@ -8159,4 +8159,31 @@ hr {
       display: block;
       font-weight: bold; }
 
-/*# sourceMappingURL=main.css.map */
+.card {
+  border-color: #eeeff1;
+  -webkit-box-shadow: -1px 1px 3px 0px rgba(0, 0, 0, 0.31);
+  -moz-box-shadow: -1px 1px 3px 0px rgba(0, 0, 0, 0.31);
+  box-shadow: -1px 1px 3px 0px rgba(0, 0, 0, 0.31);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  border-radius: 10px;
+  overflow: hidden; }
+  .card .card-header {
+    padding: 15px 25px 10px 25px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 0;
+    position: relative;
+    overflow: hidden; }
+    .card .card-header:after {
+      display: block;
+      content: '';
+      border-top: 1px solid #d9dadb;
+      position: absolute;
+      width: calc(100% - 50px);
+      bottom: 0; }
+    .card .card-header h1, .card .card-header h2, .card .card-header h3, .card .card-header h4, .card .card-header h5, .card .card-header h6 {
+      margin: 0; }
+  .card .card-body {
+    padding: 15px 25px; }
