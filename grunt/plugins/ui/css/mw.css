@@ -1,5 +1,10 @@
+/*$border-radius:               .25rem !default;
+$border-radius-lg:            .3rem !default;
+$border-radius-sm:            .2rem !default;*/
+/*$custom-file-padding-y:             $input-btn-padding-y !default;*/
+/*$custom-file-line-height:           1 !default;*/
 body {
-  background-color: #f2f3f5; }
+  background-color: #fafafa; }
 
 @media screen and (max-width: 991px) {
   .container {
@@ -11,7 +16,7 @@ header {
   header .logo h1, header .logo h2, header .logo h3, header .logo h4, header .logo h5, header .logo h6 {
     margin-bottom: 0; }
   header .language-selector .btn {
-    padding: 0.657rem 0.6rem; }
+    padding: 0.844rem 0.55rem; }
   header .mobile-toggle {
     display: flex;
     align-items: center;
@@ -59,7 +64,7 @@ header {
       .main aside > ul > li.nav-item > a {
         border-left: 5px solid transparent;
         padding: 15px 10px;
-        color: #bcbfc2;
+        color: #7e7e7e;
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis; }
@@ -67,7 +72,7 @@ header {
           margin-right: 10px;
           float: left;
           font-size: 1.5em;
-          margin-top: -5px; }
+          line-height: 1; }
         .main aside > ul > li.nav-item > a.active {
           background: #fff;
           border-left: 5px solid #4592ff;
@@ -95,7 +100,11 @@ header {
           padding-left: 47px;
           white-space: nowrap;
           overflow: hidden;
-          text-overflow: ellipsis; }
+          text-overflow: ellipsis;
+          color: #7e7e7e; }
+          .main aside > ul > li.nav-item .dropdown-menu .dropdown-item.active {
+            color: #2b2b2b;
+            background: transparent; }
     .main aside > ul .dropdown .dropdown-menu.show {
       position: relative; }
     .main aside > ul .dropdown .dropdown-toggle .badge-holder {
@@ -109,7 +118,7 @@ header {
       height: 20px;
       -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' style='width:24px;height:24px' viewBox='0 0 24 24'%3E%3Cpath fill='currentColor' d='M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z' /%3E%3C/svg%3E");
       mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' style='width:24px;height:24px' viewBox='0 0 24 24'%3E%3Cpath fill='currentColor' d='M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z' /%3E%3C/svg%3E");
-      background-color: #bcbfc2;
+      background-color: #7e7e7e;
       background-repeat: no-repeat;
       background-position: center center;
       background-size: contain;
@@ -156,5 +165,20 @@ header {
     @media screen and (max-width: 991px) {
       .main.show-sidebar-tree main {
         width: 100%; } }
+
+.muted-card .card:not(:hover) {
+  border-top-color: transparent;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  border-radius: 0; }
+  .muted-card .card:not(:hover) .js-move {
+    visibility: hidden; }
+  .muted-card .card:not(:hover) .btn-outline-primary,
+  .muted-card .card:not(:hover) .btn-outline-success,
+  .muted-card .card:not(:hover) .btn-outline-danger {
+    border-color: #bcbfc2;
+    color: #bcbfc2; }
+  .muted-card .card:not(:hover) h1, .muted-card .card:not(:hover) h2, .muted-card .card:not(:hover) h3, .muted-card .card:not(:hover) h4, .muted-card .card:not(:hover) h5, .muted-card .card:not(:hover) h6 {
+    color: #bcbfc2 !important; }
 
 /*# sourceMappingURL=mw.css.map */
