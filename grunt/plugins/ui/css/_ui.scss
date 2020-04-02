@@ -395,7 +395,7 @@ body .bootstrap-select>select.mobile-device:focus+.dropdown-toggle{
         height: auto;
         min-height: 40px;
         padding-right: 5px;
-        
+
         &.btn-sm{
             padding-top:0.25rem;
             padding-bottom:0.25rem;    
@@ -758,6 +758,14 @@ body .bootstrap-select>select.mobile-device:focus+.dropdown-toggle{
         &:hover{
             border-color: $primary;
         }
+    }
+
+    &.bg-silver{
+        background: #fafafa;
+    }
+    
+    &.bg-silver:not(.collapsed){
+        background: transparent;
     }
 
     &.not-collapsed-border:not(.collapsed){

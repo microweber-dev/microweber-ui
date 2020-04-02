@@ -8290,6 +8290,10 @@ body .bootstrap-select > select.mobile-device:focus + .dropdown-toggle {
     cursor: pointer; }
     .card.not-collapsed-border:hover {
       border-color: #4592ff; }
+  .card.bg-silver {
+    background: #fafafa; }
+  .card.bg-silver:not(.collapsed) {
+    background: transparent; }
   .card.not-collapsed-border:not(.collapsed) {
     border-color: #4592ff; }
     .card.not-collapsed-border:not(.collapsed):before {

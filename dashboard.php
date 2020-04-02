@@ -221,7 +221,7 @@
             <br />
 
             <h6><strong>All orders</strong></h6>
-            <div class="card mb-2 not-collapsed-border collapsed" data-toggle="collapse" data-target="#collapse-1" aria-expanded="false" aria-controls="collapseExample">
+            <div class="card mb-2 not-collapsed-border collapsed bg-silver" data-toggle="collapse" data-target="#collapse-1" aria-expanded="false" aria-controls="collapseExample">
                 <div class="card-body">
                     <div class="row align-items-center">
                         <div class="col">
@@ -294,7 +294,7 @@
                 </div>
             </div>
 
-            <div class="card mb-2 not-collapsed-border collapsed" data-toggle="collapse" data-target="#collapse-2" aria-expanded="false" aria-controls="collapseExample">
+            <div class="card mb-2 not-collapsed-border collapsed bg-silver" data-toggle="collapse" data-target="#collapse-2" aria-expanded="false" aria-controls="collapseExample">
                 <div class="card-body">
                     <div class="row align-items-center">
                         <div class="col">
@@ -380,7 +380,7 @@
             <div><a href="#" class="btn btn-primary btn-sm">View all</a></div>
         </div>
         <div class="card-body">
-            <div class="card mb-2 not-collapsed-border collapsed" data-toggle="collapse" data-target="#comments-1" aria-expanded="false" aria-controls="collapseExample">
+            <div class="card mb-2 not-collapsed-border collapsed bg-silver" data-toggle="collapse" data-target="#comments-1" aria-expanded="false" aria-controls="collapseExample">
                 <div class="card-body">
                     <div class="row align-items-center">
                         <div class="col" style="max-width: 100px;">
@@ -474,7 +474,7 @@
             <div><a href="#" class="btn btn-outline-secondary btn-sm">View all</a></div>
         </div>
         <div class="card-body">
-            <div class="card mb-2 not-collapsed-border collapsed" data-toggle="collapse" data-target="#message-1" aria-expanded="false" aria-controls="collapseExample">
+            <div class="card mb-2 not-collapsed-border collapsed bg-silver" data-toggle="collapse" data-target="#message-1" aria-expanded="false" aria-controls="collapseExample">
                 <div class="card-body">
                     <div class="row align-items-center">
                         <div class="col" style="max-width:26px;">

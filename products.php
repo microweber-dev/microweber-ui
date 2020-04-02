@@ -53,7 +53,7 @@
             </div>
 
             <div class="muted-cards">
-                <div class="card mb-2 not-collapsed-border collapsed">
+                <div class="card mb-2">
                     <div class="card-body">
                         <div class="row align-items-center">
                             <div class="col text-center" style="max-width: 40px;">
@@ -92,7 +92,7 @@
                     </div>
                 </div>
 
-                <div class="card mb-2 not-collapsed-border collapsed">
+                <div class="card mb-2">
                     <div class="card-body">
                         <div class="row align-items-center">
                             <div class="col text-center" style="max-width: 40px;">
@@ -131,7 +131,7 @@
                     </div>
                 </div>
 
-                <div class="card mb-2 not-collapsed-border collapsed">
+                <div class="card mb-2">
                     <div class="card-body">
                         <div class="row align-items-center">
                             <div class="col text-center" style="max-width: 40px;">
