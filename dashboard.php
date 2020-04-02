@@ -389,7 +389,7 @@
                             </div>
                         </div>
                         <div class="col text-left">
-                            <span class="text-primary text-break-line-2">Around the world</span>
+                            <h5 class="text-primary text-break-line-2">Around the world</h5>
                         </div>
 
                         <div class="col text-right">5 minutes ago</div>
@@ -447,7 +447,7 @@
                                         </div>
                                         <div class="col">
                                             <div class="form-group">
-                                                <textarea class="form-control"></textarea>
+                                                <textarea></textarea>
                                             </div>
                                             <div class="text-right">
                                                 <a href="dashboard.html" class="btn btn-outline-secondary btn-sm">Post Comment</a>

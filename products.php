@@ -42,27 +42,17 @@
 
                 <div class="col-6 text-right">
                     <span>Sort by:</span>
-                    <div class="d-inline-block mr-3">
-                        <div style="max-width: 100px;">
-                            <select class="selectpicker" title="Sort by:" data-style="btn-sm" data-width="auto">
-                                <option>Date</option>
-                                <option>Title</option>
-                            </select>
-                        </div>
+                    <div class="d-inline-block mx-1">
+                        <button type="button" class="btn btn-outline-secondary btn-sm icon-right">Date <i class="mdi mdi-chevron-up text-muted"></i></button>
                     </div>
 
-                    <div class="d-inline-block mr-2">
-                        <div style="max-width: 100px;">
-                            <select class="selectpicker" title="Bulk actions" data-style="btn-sm" data-width="auto">
-                                <option>Delete all</option>
-                                <option>Other</option>
-                            </select>
-                        </div>
+                    <div class="d-inline-block">
+                        <button type="button" class="btn btn-outline-secondary btn-sm icon-right">Title <i class="mdi mdi-chevron-down text-muted"></i></button>
                     </div>
                 </div>
             </div>
 
-            <div class="muted-card">
+            <div class="muted-cards">
                 <div class="card mb-2 not-collapsed-border collapsed">
                     <div class="card-body">
                         <div class="row align-items-center">
@@ -140,7 +130,7 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="card mb-2 not-collapsed-border collapsed">
                     <div class="card-body">
                         <div class="row align-items-center">
@@ -180,12 +170,33 @@
                     </div>
                 </div>
             </div>
-
-            <div class="icon-title">
-                <i class="mdi mdi-email-check"></i> <h5>You don't have any messages</h5>
-            </div>
-
         </div>
+    </div>
+
+    <div class="site-pagination">
+        <ul class="pagination">
+            <li class="page-item disabled">
+                <a class="page-link" href="#">Previous</a>
+            </li>
+            <li class="page-item active">
+                <a class="page-link" href="#">1</a>
+            </li>
+            <li class="page-item">
+                <a class="page-link" href="#">2</a>
+            </li>
+            <li class="page-item">
+                <a class="page-link" href="#">3</a>
+            </li>
+            <li class="page-item">
+                <a class="page-link" href="#">4</a>
+            </li>
+            <li class="page-item">
+                <a class="page-link" href="#">5</a>
+            </li>
+            <li class="page-item">
+                <a class="page-link" href="#">Next</a>
+            </li>
+        </ul>
     </div>
 
 

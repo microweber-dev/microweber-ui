@@ -11,7 +11,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.4.6/css/flag-icon.min.css"/>
         <link rel="stylesheet" href="grunt/plugins/ui/css/mw.css">
 
-        <title>Hello, world!</title>
+        <!--<title>Hello, world!</title>-->
 
         <script src="grunt/plugins/jquery-3.4.1.min.js"></script>
     </head>
@@ -23,7 +23,7 @@
                         <li class="mx-1 mobile-toggle"><button type="button" class="js-toggle-mobile-nav"><i class="mdi mdi-menu"></i></button></li>
 
                         <li class="mx-1 logo d-none d-md-block">
-                            <h5 class="text-white mr-3"><img src="assets/img/logo.svg" alt="Microweber" style="height: 40px;" /></h5>
+                            <h5 class="text-white mr-3 d-flex align-items-center h-100"><img src="assets/img/logo.svg" alt="Microweber" style="width: 170px;" /></h5>
                         </li>
 
                         <li class="mx-1 d-none d-md-block">
@@ -42,7 +42,7 @@
                             </h5>
                         </li>
 
-                        <li class="mx-1"><a href="#" class="btn btn-link btn-rounded icon-left"><span class="badge badge-success badge-pill mr-2">4</span> <i class="mdi mdi-shopping"></i> Add new</a></li>
+                        <li class="mx-1"><a href="#" class="btn btn-link btn-rounded icon-left text-dark"><span class="badge badge-success badge-pill mr-2">4</span> <i class="mdi mdi-shopping text-muted"></i> New order</a></li>
                     </ul>
 
                     <ul class="nav">
@@ -68,17 +68,17 @@
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle active" href="javascript:;"><i class="mdi mdi-earth"></i> Website</a>
                         <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">Pages</a>
-                            <a class="dropdown-item active" href="#">Posts</a>
-                            <a class="dropdown-item" href="products.php">Products</a>
-                            <a class="dropdown-item" href="#">Categories</a>
+                            <a class="dropdown-item" href="#">Pages <span class="btn btn-primary btn-rounded btn-icon btn-sm add-new" onClick="javascript:return false;" data-toggle="tooltip" title="New page"><i class="mdi mdi-plus"></i></span></a>
+                            <a class="dropdown-item active" href="#">Posts <span class="btn btn-primary btn-rounded btn-icon btn-sm add-new" onClick="javascript:return false;" data-toggle="tooltip" title="New post"><i class="mdi mdi-plus"></i></span></a>
+                            <a class="dropdown-item" href="products.php">Products <span class="btn btn-primary btn-rounded btn-icon btn-sm add-new" onClick="javascript:return false;" data-toggle="tooltip" title="New product"><i class="mdi mdi-plus"></i></span></a>
+                            <a class="dropdown-item" href="#">Categories <span class="btn btn-primary btn-rounded btn-icon btn-sm add-new" onClick="javascript:return false;" data-toggle="tooltip" title="New category"><i class="mdi mdi-plus"></i></span></a>
                         </div>
                     </li>
                     <li class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle"><i class="mdi mdi-shopping"></i> <span class="badge-holder">Shop<span class="badge badge-success badge-sm badge-pill">4</span></span></a>
                         <div class="dropdown-menu">
                             <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item active" href="#">Another action</a>
                             <a class="dropdown-item" href="#">Something else here</a>
                             <a class="dropdown-item" href="#">Separated link</a>
                         </div>

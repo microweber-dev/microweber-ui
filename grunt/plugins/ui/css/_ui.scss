@@ -8,7 +8,7 @@ hr.thin {
 
 @import 'margins.css';
 
-textarea.form-control{
+textarea:not(.form-control){
     background-color: #fafafa;
     -webkit-box-shadow: inset 0px 0px 4px -1px rgba(0, 0, 0, 0.34);
     -moz-box-shadow: inset 0px 0px 4px -1px rgba(0, 0, 0, 0.34);
@@ -77,6 +77,9 @@ textarea.form-control{
 
 .btn {
     display: inline-flex;
+    height: 40px;
+    padding-left: 15px;
+    padding-right: 15px;
 
     i {
         display: inline-block;
@@ -93,11 +96,16 @@ textarea.form-control{
     }
 
     &.btn-sm {
+        height: 30px;
         i {
             &:before {
                 /*margin: 1px 3px 2px 3px;*/
             }
         }
+    }
+
+    &.btn-lg {
+        height: 50px;
     }
 
     &.icon-left {
@@ -261,18 +269,50 @@ textarea.form-control{
     vertical-align: 0.1em;
 }
 
+
 .btn .badge-pill {
     padding: 0.4em .55em;
 }
 
-.badge.badge-sm, 
-.btn.btn-sm .badge-pill {
-    padding: 0.282rem .35rem !important
+.btn  {
+    .badge{
+        margin-top: -2.5px;
+        height: 20px;
+        min-width: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &.btn-sm {
+        .badge {
+            margin-top: -2.8px;
+            height: 20px;
+            min-width: 20px;
+        }
+    }
+
+    &.btn-lg {
+        .badge {
+            margin-top: -3px;
+            height: 24px;
+            min-width: 24px;
+
+        }
+    }
 }
 
-.badge.badge-lg,
-.btn.btn-lg .badge-pill {
+
+.badge.badge-sm{
+    padding: 0.282rem .35rem !important;
+    height: 20px;
+    min-width: 20px;
+}
+
+.badge.badge-lg{
     padding: 0.4em .55em;
+    height: 24px;
+    min-width: 24px;
 }
 
 .text-silver {
@@ -352,10 +392,24 @@ body .bootstrap-select>select.mobile-device:focus+.dropdown-toggle{
     .btn{
         padding-top:0.563rem;
         padding-bottom:0.563rem;
-
+        height: auto;
+        min-height: 40px;
+        padding-right: 5px;
+        
         &.btn-sm{
             padding-top:0.25rem;
             padding-bottom:0.25rem;    
+            height: auto;
+            min-height: 30px;
+        }
+
+        &.btn-lg{
+            height: auto;
+            min-height: 50px;
+        }
+
+        .badge{
+            margin: 0;
         }
     }
 
@@ -367,8 +421,8 @@ body .bootstrap-select>select.mobile-device:focus+.dropdown-toggle{
         background-position: center center;
         background-size: contain;
         width: 21px;
-        height: 21px;
-        border: 0;
+        height: 18px;
+        /*border: 0;*/
 
         &.btn-sm{
             height: 18px; 
@@ -780,6 +834,37 @@ body .bootstrap-select>select.mobile-device:focus+.dropdown-toggle{
 
     }
 }
+
+
+.card-bubble{
+    overflow: visible;
+    &:after{
+        background-color: #fff;
+        content: "\00a0";
+        display: block;
+        height: 11px;
+        position: absolute;
+        top: 15px;
+        transform: rotate(29deg) skew(-35deg);
+        -moz-transform: rotate(29deg) skew(-35deg);
+        -ms-transform: rotate(29deg) skew(-35deg);
+        -o-transform: rotate(29deg) skew(-35deg);
+        -webkit-transform: rotate(29deg) skew(-35deg);
+        width: 12px;
+        border-left: 1px solid #eeeff1;
+        border-bottom: 1px solid #eeeff1;
+        border-top: 3px solid #fff;
+        left: -6px;
+    }
+
+    &:not(.collapsed),
+        &:hover{
+        &:after{
+            border-left: 1px solid $primary;
+            border-bottom: 1px solid $primary;
+        }
+    }
+}
 /* Text Line Breaks */
 .text-break-line-1{
     overflow: hidden;
@@ -879,7 +964,7 @@ body .bootstrap-select>select.mobile-device:focus+.dropdown-toggle{
         color: $dark;
         i{
             font-size: 1.15em;
-            line-height: 1;
+            line-height: 0.5;
             color: #bcbfc2;
             margin-right: 10px;
         }
@@ -958,4 +1043,101 @@ body .bootstrap-select>select.mobile-device:focus+.dropdown-toggle{
 .mdi-64px.mdi-set,
 .mdi-64px.mdi:before {
     font-size: 64px;
+}
+
+.btn.btn-link{
+    text-decoration: none;
+}
+
+
+.muted-cards{
+    .card:not(:hover){
+        border-top-color: transparent;
+        border-left-color: transparent;
+        border-right-color: transparent;
+        border-radius: 0;
+        .js-move{
+            visibility: hidden;
+        }
+
+        .btn-outline-primary,
+        .btn-outline-success,
+        .btn-outline-danger{
+            border-color: $silver;
+            color: $silver;
+        }
+
+        h1,h2,h3,h4,h5,h6{
+            color: $silver !important;
+        }
+    }
+
+    .card:hover{
+        background: #fafafa;
+        border-color: #eeeff1;
+        -webkit-box-shadow: -1px 1px 1px 0px rgba(0, 0, 0, 0.11);
+        -moz-box-shadow: -1px 1px 1px 0px rgba(0, 0, 0, 0.11);
+        box-shadow: -1px 1px 1px 0px rgba(0, 0, 0, 0.11);
+    }
+}
+
+.muted-cards-2{
+    .card:not(:hover){
+        border-top-color: transparent;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+        border-right-color: transparent;
+        border-radius: 0;
+        .js-move{
+            visibility: hidden;
+        }
+
+        .btn-outline-primary,
+        .btn-outline-success,
+        .btn-outline-danger{
+            border-color: $silver;
+            color: $silver;
+        }
+
+        h1,h2,h3,h4,h5,h6{
+            a.text-primary{
+                color: $silver !important;
+            }
+        }
+    }
+
+    .card:hover{
+        background: #fafafa;
+        border-color: #eeeff1;
+        -webkit-box-shadow: -1px 1px 1px 0px rgba(0, 0, 0, 0.11);
+        -moz-box-shadow: -1px 1px 1px 0px rgba(0, 0, 0, 0.11);
+        box-shadow: -1px 1px 1px 0px rgba(0, 0, 0, 0.11);
+    }
+}
+
+.btn .spinner-border{
+    margin-top: -2px;
+}
+
+
+label.control-label{
+    font-weight: bold !important;
+}
+
+.help-tooltip{
+    &:before{
+        content: "\F0BA5";
+        display: inline-block;
+        font: normal normal normal 24px/1 "Material Design Icons";
+        font-size: inherit;
+        text-rendering: auto;
+        line-height: inherit;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        color: $silver;
+        font-size: 1.2em;
+        float: right;
+        margin-top: -0.1em;
+        margin-left: 0.2em;
+    }
 }
