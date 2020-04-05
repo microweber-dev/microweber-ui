@@ -53,7 +53,7 @@
             </div>
 
             <div class="muted-cards">
-                <div class="card mb-2">
+                <div class="card card-product-holder mb-2">
                     <div class="card-body">
                         <div class="row align-items-center">
                             <div class="col text-center" style="max-width: 40px;">
@@ -66,7 +66,7 @@
                                 <button type="button" class="btn btn-link text-muted px-0 js-move"><i class="mdi mdi-cursor-move"></i></button>
                             </div>
 
-                            <div class="col" style="min-width: 120px;">
+                            <div class="col item-image">
                                 <div class="position-absolute text-muted" style="z-index: 1; right: 0; top: -10px;">
                                     <i class="mdi mdi-shopping mdi-18px" data-toggle="tooltip" title="Продукт"></i>
                                 </div>
@@ -75,9 +75,10 @@
                                 </div>    
                             </div>
 
-                            <div class="col" style="min-width: 270px;">
+                            <div class="col item-title">
                                 <h5 class="text-dark text-break-line-1 mb-0">Modern Golden Watch</h5>
                                 <a href="#" class="text-muted">Category 1,</a> <a href="#" class="text-muted">Category 2</a> 
+                                <br />
                                 <small class="text-muted">http://localhost/microweber/dave-wool-beanie</small>
                                 <div class="mt-2">
                                     <a href="#" class="btn btn-outline-primary btn-sm">Edit</a> 
@@ -86,8 +87,8 @@
                                 </div>
                             </div>
 
-                            <div class="col text-right"><span class="text-muted">Admin</span></div>
-                            <div class="col text-right" style="max-width: 100px;"><span class="text-muted"><i class="mdi mdi-comment mdi-18px"></i> <span class="float-right mx-2">0</span></span></div>
+                            <div class="col item-author"><span class="text-muted">Admin</span></div>
+                            <div class="col item-comments" style="max-width: 100px;"><span class="text-muted"><i class="mdi mdi-comment mdi-18px"></i> <span class="float-right mx-2">0</span></span></div>
                         </div>
                     </div>
                 </div>

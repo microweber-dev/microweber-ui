@@ -228,4 +228,75 @@ header {
 .timeline .timeline-event:last-of-type .timeline-line:before {
   height: 10px; }
 
-/*# sourceMappingURL=mw.css.map */
+.card-order-holder .item-image {
+  max-width: 100px; }
+.card-order-holder .item-id {
+  max-width: 60px; }
+.card-order-holder .item-title {
+  min-width: 250px; }
+.card-order-holder .item-amount {
+  text-align: right; }
+.card-order-holder .item-date {
+  text-align: right; }
+.card-order-holder .item-status {
+  max-width: 100px;
+  text-align: right; }
+@media screen and (max-width: 1199px) {
+  .card-order-holder .item-title {
+    min-width: auto; } }
+@media screen and (max-width: 767px) {
+  .card-order-holder .item-image {
+    margin: 0 auto;
+    text-align: left; }
+  .card-order-holder .item-title {
+    min-width: auto; }
+  .card-order-holder .item-amount {
+    text-align: left;
+    margin: 10px 0; }
+  .card-order-holder .item-date {
+    text-align: left;
+    margin: 10px 0; }
+  .card-order-holder .item-status {
+    max-width: none;
+    text-align: center; } }
+@media screen and (max-width: 575px) {
+  .card-order-holder .item-image {
+    margin: 0 auto;
+    text-align: center;
+    max-width: 100%;
+    min-width: 100%; }
+    .card-order-holder .item-image > div {
+      margin: 0 auto 10px auto; }
+  .card-order-holder .item-title {
+    min-width: auto; }
+  .card-order-holder .item-amount {
+    text-align: left;
+    margin: 10px 0; }
+  .card-order-holder .item-date {
+    text-align: right;
+    margin: 10px 0; }
+  .card-order-holder .item-status {
+    max-width: none;
+    text-align: center; } }
+
+.card-message-holder .item-id {
+  max-width: 60px; }
+@media screen and (max-width: 575px) {
+  .card-message-holder .item-id {
+    max-width: none; } }
+
+.card-product-holder .item-title {
+  min-width: 270px; }
+.card-product-holder .item-image {
+  min-width: 120px;
+  max-width: 120px; }
+.card-product-holder .item-comments,
+.card-product-holder .item-author {
+  text-align: right; }
+@media screen and (max-width: 767px) {
+  .card-product-holder .item-comments,
+  .card-product-holder .item-author {
+    display: none; }
+  .card-product-holder .item-image {
+    /*margin: 0 auto 10px auto;*/
+    margin-bottom: 10px; } }

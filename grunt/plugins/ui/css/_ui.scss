@@ -13,6 +13,20 @@ textarea:not(.form-control){
     -webkit-box-shadow: inset 0px 0px 4px -1px rgba(0, 0, 0, 0.34);
     -moz-box-shadow: inset 0px 0px 4px -1px rgba(0, 0, 0, 0.34);
     box-shadow: inset 0px 0px 4px -1px rgba(0, 0, 0, 0.34);
+
+    outline: none !important;
+    min-height: 100px;
+    display: block;
+    width: 100%;
+    padding: 0.75rem 0.75rem;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #555555;
+    background-clip: padding-box;
+    border: 1px solid #cfcfcf;
+    border-radius: 5px;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 .btn-rounded {
     border-radius: 40px;
@@ -763,7 +777,7 @@ body .bootstrap-select>select.mobile-device:focus+.dropdown-toggle{
     &.bg-silver{
         background: #fafafa;
     }
-    
+
     &.bg-silver:not(.collapsed){
         background: transparent;
     }

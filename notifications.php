@@ -46,32 +46,42 @@
                         <button type="button" class="btn btn-outline-primary btn-rounded btn-icon"><i class="mdi mdi-shopping"></i></button>
                     </div>
                     <div class="col">
-                        <div class="card mb-2 not-collapsed-border collapsed card-bubble" data-toggle="collapse" data-target="#collapse-1" aria-expanded="false" aria-controls="collapseExample">
+                        <div class="card mb-2 not-collapsed-border collapsed card-bubble card-order-holder" data-toggle="collapse" data-target="#collapse-1" aria-expanded="false" aria-controls="collapseExample">
                             <div class="card-body">
-                                <div class="row align-items-center">
-                                    <div class="col">
-                                        <div class="img-circle-holder">
-                                            <img src="https://s12emagst.akamaized.net/products/14414/14413292/images/res_77ef39ad42fe97f3288ebb6ed0e91dad_450x450_5rk5.jpg" />
+                                <div class="row">
+                                    <div class="col-12 col-md-6">
+                                        <div class="row align-items-center">
+                                            <div class="col item-image">
+                                                <div class="img-circle-holder">
+                                                    <img src="https://s12emagst.akamaized.net/products/14414/14413292/images/res_77ef39ad42fe97f3288ebb6ed0e91dad_450x450_5rk5.jpg" />
+                                                </div>
+                                            </div>
+                                            <div class="col item-id"><span class="text-primary">#4</span></div>
+                                            <div class="col item-title">
+                                                <span class="text-primary text-break-line-2">3D Sound Speaker 3D Sound Speaker 3D Sound Speaker 3D Sound Speaker 3D Sound Speaker</span>
+                                                <small class="text-muted">Ordered by: Boris Sokolov</small>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="col" style="max-width: 60px;"><span class="text-primary">#4</span></div>
-                                    <div class="col" style="min-width: 250px;">
-                                        <span class="text-primary text-break-line-2">3D Sound Speaker 3D Sound Speaker 3D Sound Speaker 3D Sound Speaker 3D Sound Speaker</span>
-                                        <small class="text-muted">Ordered by: Boris Sokolov</small>
+                                    <div class="col-12 col-md-6">
+                                        <div class="row align-items-center">
+
+                                            <div class="col-6 col-sm-4 col-md item-amount">$20 USD<br /><small class="text-muted">Paid</small></div>
+                                            <div class="col-6 col-sm-4 col-md item-date">Mar 05, 2020<br /><small class="text-muted">12:33h</small></div>
+                                            <div class="col-12 col-sm-4 col-md item-status"><span class="text-success">New</span><br /><small class="text-muted">&nbsp;</small></div>
+                                        </div>
                                     </div>
-                                    <div class="col text-right">$20 USD<br /><small class="text-muted">Paid</small></div>
-                                    <div class="col text-right">Mar 05, 2020<br /><small class="text-muted">12:33h</small></div>
-                                    <div class="col text-right" style="max-width: 100px;"><span class="text-success">New</span><br /><small class="text-muted">&nbsp;</small></div>
                                 </div>
-                                <div class="collapse" id="collapse-1">
+
+                                <div class="collapse" id="collapse-3">
                                     <div class="row mt-3">
-                                        <div class="col-12">
+                                        <div class="col-12 text-center text-sm-left">
                                             <a href="dashboard.html" class="btn btn-primary btn-sm btn-rounded">View order</a>
                                         </div>
                                     </div>
                                     <hr class="thin" />
                                     <div class="row">
-                                        <div class="col-md-4">
+                                        <div class="col-sm-6 col-md-4">
                                             <h6><strong>Customer Information</strong></h6>
                                             <div>
                                                 <small class="text-muted">Client name:</small>
@@ -88,7 +98,8 @@
                                                 <p>0878 999 888</p>
                                             </div>
                                         </div>
-                                        <div class="col-md-4">
+
+                                        <div class="col-sm-6 col-md-4">
                                             <h6><strong>Payment Information</strong></h6>
 
                                             <div>
@@ -101,7 +112,8 @@
                                                 <p>Pay on delivery</p>
                                             </div>
                                         </div>
-                                        <div class="col-md-4">
+
+                                        <div class="col-sm-6 col-md-4">
                                             <h6><strong>Shipping Information</strong></h6>
 
                                             <div>
@@ -131,15 +143,15 @@
                         <button type="button" class="btn btn-outline-primary btn-rounded btn-icon"><i class="mdi mdi-email-check"></i></button>
                     </div>
                     <div class="col">
-                        <div class="card mb-2 not-collapsed-border collapsed card-bubble" data-toggle="collapse" data-target="#message-1" aria-expanded="false" aria-controls="collapseExample">
+                        <div class="card mb-2 not-collapsed-border collapsed card-message-holder card-bubble" data-toggle="collapse" data-target="#message-1" aria-expanded="false" aria-controls="collapseExample">
                             <div class="card-body">
                                 <div class="row align-items-center">
                                     <div class="col" style="max-width:26px;">
                                         <i class="mdi mdi-email text-primary mdi-24px"></i>
                                     </div>
-                                    <div class="col" style="max-width: 60px;"><span class="text-primary">#4</span></div>
-                                    <div class="col">Mar 05, 2020 <small class="text-muted">12:33h</small></div>
-                                    <div class="col">44 minutes ago</div>
+                                    <div class="col-10 col-sm item-id"><span class="text-primary">#4</span></div>
+                                    <div class="col-6 col-sm">Mar 05, 2020 <small class="text-muted">12:33h</small></div>
+                                    <div class="col-6 col-sm">44 minutes ago</div>
                                 </div>
                                 <div class="collapse" id="message-1">
                                     <hr class="thin" />
@@ -204,7 +216,7 @@
                                         <h5 class="text-primary text-break-line-2">Around the world</h5>
                                     </div>
 
-                                    <div class="col text-right">5 minutes ago</div>
+                                    <div class="col-12 col-sm text-right">5 minutes ago</div>
                                 </div>
                                 <div class="collapse" id="comments-1">
                                     <div class="row mt-3">
@@ -257,7 +269,7 @@
                                                             <img src="https://d1qb2nb5cznatu.cloudfront.net/users/40837-medium_jpg?1405468137" />
                                                         </div>
                                                     </div>
-                                                    <div class="col">
+                                                    <div class="col-12 col-sm mt-3 mt-sm-0">
                                                         <div class="form-group">
                                                             <textarea></textarea>
                                                         </div>
