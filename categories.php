@@ -151,11 +151,11 @@
                             <div class="form-group">
                                 <label class="control-label">Category Image</label>
                                 <p class="text-muted">Upload image to your category or select from <a href="#" class="text-primary">Browse uploaded</a> or from <a href="#" class="text-primary">Media library</a></p>
-                                <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+                                
+                                <button class="btn btn-outline-success btn-sm">UPLOAD</button>                                
                             </div>
                         </div>
 
-                        
                         <div class="col-12">
                             <label class="control-label">Other settings</label>
                             <p class="text-muted">Discover more advanced options </p>

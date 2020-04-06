@@ -210,8 +210,19 @@ header {
 .main:not(.show-sidebar-tree) .no-items-box {
   padding: 100px 50px; }
 
+.timeline .timeline-event .dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  padding: 0;
+  margin: 0 13.5px; }
 .timeline .timeline-event .timeline-line {
   max-width: 90px; }
+  .timeline .timeline-event .timeline-line.datetime-indicator {
+    max-width: none;
+    padding-left: 46px;
+    padding-bottom: 40px;
+    padding-top: 30px; }
   .timeline .timeline-event .timeline-line:before {
     content: '';
     width: 4px;
@@ -219,12 +230,16 @@ header {
     position: absolute;
     background: #4592ff;
     margin-right: 22px;
-    right: 0; }
+    right: auto;
+    left: 63px;
+    top: 0; }
   .timeline .timeline-event .timeline-line .btn-icon {
     background: #fff;
     color: #4592ff; }
   .timeline .timeline-event .timeline-line .custom-control {
     margin-bottom: 0; }
+.timeline .timeline-event:first-of-type .timeline-line.datetime-indicator {
+  padding-top: 0px; }
 .timeline .timeline-event:last-of-type .timeline-line:before {
   height: 10px; }
 
@@ -300,3 +315,5 @@ header {
   .card-product-holder .item-image {
     /*margin: 0 auto 10px auto;*/
     margin-bottom: 10px; } }
+
+/*# sourceMappingURL=mw.css.map */

@@ -7877,7 +7877,10 @@ textarea:not(.form-control) {
     margin-left: 0;
     margin-right: 0; }
 .btn.btn-icon.btn-sm, .btn-group-sm > .btn.btn-icon {
-  padding: 0.532rem 0.06rem; }
+  padding: 0.532rem 0.15rem; }
+  .btn.btn-icon.btn-sm i:before, .btn-group-sm > .btn.btn-icon i:before {
+    font-size: 1em;
+    margin: 1px 3px 0 3px; }
 .btn.btn-icon.btn-lg, .btn-group-lg > .btn.btn-icon {
   padding: 1.157rem 0.65rem; }
 .btn.btn-icon.btn-rounded {
@@ -8379,6 +8382,9 @@ body .bootstrap-select > select.mobile-device:focus + .dropdown-toggle {
     border-bottom: 1px solid #eeeff1;
     border-top: 3px solid #fff;
     left: -6px; }
+  .card-bubble.bg-silver.collapsed:after {
+    border-top-color: #fafafa;
+    background-color: #fafafa; }
   .card-bubble:not(.collapsed):after, .card-bubble:hover:after {
     border-left: 1px solid #4592ff;
     border-bottom: 1px solid #4592ff; }
@@ -8421,6 +8427,12 @@ body .bootstrap-select > select.mobile-device:focus + .dropdown-toggle {
   .img-circle-holder.w-60 {
     width: 60px;
     height: 60px; }
+  .img-circle-holder.w-50 {
+    width: 50px;
+    height: 50px; }
+  .img-circle-holder.w-40 {
+    width: 40px;
+    height: 40px; }
   .img-circle-holder img {
     width: 100%;
     height: auto;

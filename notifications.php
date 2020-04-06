@@ -11,19 +11,22 @@
             <div class="toolbar row mb-3">
                 <div class="col-12">
                     <h5><strong>All Activities</strong></h5>
-                    <p>List of all notifications of your website.</p>
+                    <p>List of all notifications of your website. <a href="#" class="float-right">Show system log</a></p>
                 </div>
-                <div class="col-12 d-flex align-items-center">
-                    <div class="custom-control custom-checkbox d-inline-block mb-0 mr-3">
-                        <input type="checkbox" class="custom-control-input" id="customCheck1" checked="">
-                        <label class="custom-control-label" for="customCheck1">Select all</label>
+                <div class="col-12 d-flex align-items-center justify-content-between">
+                    <div>
+                        <div class="custom-control custom-checkbox d-inline-block mb-0 mr-3">
+                            <input type="checkbox" class="custom-control-input" id="customCheck1" checked="">
+                            <label class="custom-control-label" for="customCheck1">Select all</label>
+                        </div>
+
+                        <button class="btn btn-outline-success btn-sm mr-3">Mark as read</button>
+                        <button class="btn btn-outline-warning btn-sm mr-3">Mark as unread</button>
+                        <button class="btn btn-outline-danger btn-sm mr-3">Delete selected</button>
                     </div>
 
-                    <button class="btn btn-outline-success btn-sm mr-3">Mark as read</button>
-                    <button class="btn btn-outline-warning btn-sm mr-3">Mark as unread</button>
-                    <button class="btn btn-outline-danger btn-sm mr-3">Delete selected</button>
-
-                    <div>
+                    <div class="float-right">
+                        <span>Show notifications</span>
                         <select class="selectpicker" data-style="btn-sm" data-width="auto">
                             <option>All notifications</option>
                             <option>Orders</option>
@@ -36,6 +39,13 @@
 
 
             <div class="timeline">
+
+                <div class="row timeline-event">
+                    <div class="col pr-0 timeline-line datetime-indicator">
+                        <button type="button" class="btn btn-primary btn-rounded btn-sm">Past hour</button>
+                    </div>
+                </div>
+
                 <div class="row timeline-event">
                     <div class="col pr-0 timeline-line">
                         <div class="custom-control custom-checkbox d-inline-block">
@@ -46,18 +56,18 @@
                         <button type="button" class="btn btn-outline-primary btn-rounded btn-icon"><i class="mdi mdi-shopping"></i></button>
                     </div>
                     <div class="col">
-                        <div class="card mb-2 not-collapsed-border collapsed card-bubble card-order-holder" data-toggle="collapse" data-target="#collapse-1" aria-expanded="false" aria-controls="collapseExample">
+                        <div class="card mb-2 not-collapsed-border collapsed card-bubble card-order-holder bg-silver" data-toggle="collapse" data-target="#collapse-1" aria-expanded="false" aria-controls="collapseExample">
                             <div class="card-body">
                                 <div class="row">
                                     <div class="col-12 col-md-6">
                                         <div class="row align-items-center">
                                             <div class="col item-image">
-                                                <div class="img-circle-holder">
+                                                <div class="img-circle-holder w-60">
                                                     <img src="https://s12emagst.akamaized.net/products/14414/14413292/images/res_77ef39ad42fe97f3288ebb6ed0e91dad_450x450_5rk5.jpg" />
                                                 </div>
                                             </div>
                                             <div class="col item-id"><span class="text-primary">#4</span></div>
-                                            <div class="col item-title">
+                                            <div class="col item-title" style="min-width: 210px;">
                                                 <span class="text-primary text-break-line-2">3D Sound Speaker 3D Sound Speaker 3D Sound Speaker 3D Sound Speaker 3D Sound Speaker</span>
                                                 <small class="text-muted">Ordered by: Boris Sokolov</small>
                                             </div>
@@ -73,7 +83,7 @@
                                     </div>
                                 </div>
 
-                                <div class="collapse" id="collapse-3">
+                                <div class="collapse" id="collapse-1">
                                     <div class="row mt-3">
                                         <div class="col-12 text-center text-sm-left">
                                             <a href="dashboard.html" class="btn btn-primary btn-sm btn-rounded">View order</a>
@@ -134,6 +144,61 @@
                 </div>
 
                 <div class="row timeline-event">
+                    <div class="col pr-0 timeline-line datetime-indicator">
+                        <button type="button" class="btn btn-primary btn-rounded btn-sm mr-3">Today</button>
+
+                        <button type="button" class="btn btn-outline-primary btn-rounded btn-sm btn-icon"><i class="mdi mdi-email-check"></i></button>
+                        <button type="button" class="btn btn-outline-primary btn-rounded btn-sm btn-icon mx-1"><i class="mdi mdi-shopping"></i></button>
+                        <button type="button" class="btn btn-outline-primary btn-rounded btn-sm btn-icon"><i class="mdi mdi-comment-account"></i></button>
+                    </div>
+                </div>
+
+                <div class="row timeline-event">
+                    <div class="col pr-0 timeline-line">
+                        <div class="custom-control custom-checkbox d-inline-block">
+                            <input type="checkbox" class="custom-control-input" id="check-12" >
+                            <label class="custom-control-label" for="check-12"></label>
+                        </div>
+
+                        <span class="dot btn btn-primary"></span>
+                    </div>
+                    <div class="col">
+                        <div class="row align-items-center mb-4" style="margin-top: -10px;">
+                            <div class="col item-image" style="max-width: 55px;">
+                                <div class="img-circle-holder img-absolute w-40">
+                                    <img src="https://s12emagst.akamaized.net/products/14414/14413292/images/res_77ef39ad42fe97f3288ebb6ed0e91dad_450x450_5rk5.jpg" />
+                                </div>
+                            </div>
+                            <div class="col-4"><span class="text-primary">Peter Ivanov</span> <span class="text-muted">joined the ocmmunity</span></div>
+                            <div class="col-4"><span class="text-muted"><i class="mdi mdi-clock-outline"></i> 59 minutes, 39 seconds ago</span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row timeline-event">
+                    <div class="col pr-0 timeline-line">
+                        <div class="custom-control custom-checkbox d-inline-block">
+                            <input type="checkbox" class="custom-control-input" id="check-11" checked="">
+                            <label class="custom-control-label" for="check-11"></label>
+                        </div>
+
+                        <span class="dot btn btn-primary"></span>
+                    </div>
+                    <div class="col">
+                        <div class="row align-items-center mb-4" style="margin-top: -10px;">
+                            <div class="col item-image" style="max-width: 55px;">
+                                <div class="img-circle-holder w-40">
+                                    <i class="mdi mdi-account-check text-primary mdi-24px"></i>
+                                </div>
+                            </div>
+                            <div class="col-4"><span class="text-primary">Peter Ivanov</span> <span class="text-muted">joined the ocmmunity</span></div>
+                            <div class="col-4"><span class="text-muted"><i class="mdi mdi-clock-outline"></i> 59 minutes, 39 seconds ago</span></div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="row timeline-event">
                     <div class="col pr-0 timeline-line">
                         <div class="custom-control custom-checkbox d-inline-block">
                             <input type="checkbox" class="custom-control-input" id="check-2">
@@ -143,8 +208,14 @@
                         <button type="button" class="btn btn-outline-primary btn-rounded btn-icon"><i class="mdi mdi-email-check"></i></button>
                     </div>
                     <div class="col">
-                        <div class="card mb-2 not-collapsed-border collapsed card-message-holder card-bubble" data-toggle="collapse" data-target="#message-1" aria-expanded="false" aria-controls="collapseExample">
+                        <div class="card mb-2 not-collapsed-border collapsed card-message-holder card-bubble bg-silver" data-toggle="collapse" data-target="#message-1" aria-expanded="false" aria-controls="collapseExample">
                             <div class="card-body">
+                                <div class="row align-items-center mb-3">
+                                    <div class="col text-left">
+                                        <span class="text-primary text-break-line-2">New form entry</span>
+                                    </div>
+                                </div>
+
                                 <div class="row align-items-center">
                                     <div class="col" style="max-width:26px;">
                                         <i class="mdi mdi-email text-primary mdi-24px"></i>
@@ -204,8 +275,14 @@
                         <button type="button" class="btn btn-outline-primary btn-rounded btn-icon"><i class="mdi mdi-comment-account"></i></button>
                     </div>
                     <div class="col">
-                        <div class="card mb-2 not-collapsed-border collapsed card-bubble" data-toggle="collapse" data-target="#comments-1" aria-expanded="false" aria-controls="collapseExample">
+                        <div class="card mb-2 not-collapsed-border collapsed card-bubble bg-silver" data-toggle="collapse" data-target="#comments-1" aria-expanded="false" aria-controls="collapseExample">
                             <div class="card-body">
+                                <div class="row align-items-center mb-3">
+                                    <div class="col text-left">
+                                        <span class="text-primary text-break-line-2">New comment</span>
+                                    </div>
+                                </div>
+
                                 <div class="row align-items-center">
                                     <div class="col" style="max-width: 100px;">
                                         <div class="img-circle-holder img-absolute border-radius-0 border-0">

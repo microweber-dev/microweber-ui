@@ -303,8 +303,23 @@ header{
 
 .timeline{
     .timeline-event{
+
+        .dot{
+            width: 10px;
+            height: 10px;
+            border-radius: 100%;
+            padding: 0;
+            margin: 0 13.5px;
+        }
+
         .timeline-line{
             max-width: 90px;
+            &.datetime-indicator{
+                max-width: none;
+                padding-left: 46px;
+                padding-bottom: 40px;
+                padding-top: 30px;
+            }
 
             &:before{
                 content: '';
@@ -313,7 +328,9 @@ header{
                 position: absolute;
                 background: $primary;
                 margin-right: 22px;
-                right: 0;
+                right: auto;
+                left: 63px;
+                top: 0;
             }
 
             .btn-icon{
@@ -323,6 +340,14 @@ header{
 
             .custom-control{
                 margin-bottom: 0;
+            }
+        }
+
+        &:first-of-type{
+            .timeline-line{
+                &.datetime-indicator{
+                    padding-top: 0px;
+                }
             }
         }
 
