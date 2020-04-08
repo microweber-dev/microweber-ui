@@ -35,28 +35,13 @@
                 <div class="card mb-2 not-collapsed-border collapsed">
                     <div class="card-body py-2 px-3">
                         <div class="row align-items-center">
-                            <div class="col">
-                                <h6 class="text-dark text-break-line-1 mb-0"><i class="mdi mdi-folder text-muted mdi-18px mr-2"></i> Modern Golden Watch &nbsp;/&nbsp; <a href="#" class="text-primary">Blog</a></h6>
+                            <div class="col-12 col-sm col-md-8 col-lg col-xl-9 my-1">
+                                <h6 class="text-dark text-break-line-2 mb-0"><i class="mdi mdi-folder text-muted mdi-18px mr-2"></i> Modern Golden Watch &nbsp;/&nbsp; <a href="#" class="text-primary">Blog</a></h6>
                             </div>
 
-                            <div class="col text-right">
-                                <a href="#" class="btn btn-outline-primary btn-sm">Edit</a> 
-                                <a href="#" class="btn btn-outline-danger btn-sm">Delete</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card mb-2 not-collapsed-border collapsed">
-                    <div class="card-body py-2 px-3">
-                        <div class="row align-items-center">
-                            <div class="col">
-                                <h6 class="text-dark text-break-line-1 mb-0"><i class="mdi mdi-folder text-muted mdi-18px mr-2"></i> Modern Golden Watch &nbsp;/&nbsp; <a href="#" class="text-primary">Blog</a></h6>
-                            </div>
-
-                            <div class="col text-right">
-                                <a href="#" class="btn btn-outline-primary btn-sm">Edit</a> 
-                                <a href="#" class="btn btn-outline-danger btn-sm">Delete</a>
+                            <div class="col-12 col-sm col-md-4 col-lg col-xl-3 my-1 text-right">
+                                <a href="#" class="btn btn-outline-primary btn-sm btn-sm-only-icon"><i class="mdi mdi-pencil"></i> <span class="d-none d-md-block">Edit</span></a> 
+                                <a href="#" class="btn btn-outline-danger btn-sm btn-sm-only-icon"><i class="mdi mdi-delete"></i> <span class="d-none d-md-block">Delete</span></a>
                             </div>
                         </div>
                     </div>
@@ -65,13 +50,13 @@
                 <div class="card mb-2 not-collapsed-border collapsed">
                     <div class="card-body py-2 px-3">
                         <div class="row align-items-center">
-                            <div class="col">
-                                <h6 class="text-dark text-break-line-1 mb-0"><i class="mdi mdi-folder text-muted mdi-18px mr-2"></i> Modern Golden Watch &nbsp;/&nbsp; <a href="#" class="text-primary">Blog</a></h6>
+                            <div class="col-12 col-sm col-md-8 col-lg col-xl-9 my-1">
+                                <h6 class="text-dark text-break-line-2 mb-0"><i class="mdi mdi-folder text-muted mdi-18px mr-2"></i> Modern Golden Watch &nbsp;/&nbsp; <a href="#" class="text-primary">Blog</a></h6>
                             </div>
 
-                            <div class="col text-right">
-                                <a href="#" class="btn btn-outline-primary btn-sm">Edit</a> 
-                                <a href="#" class="btn btn-outline-danger btn-sm">Delete</a>
+                            <div class="col-12 col-sm col-md-4 col-lg col-xl-3 my-1 text-right">
+                                <a href="#" class="btn btn-outline-primary btn-sm btn-sm-only-icon"><i class="mdi mdi-pencil"></i> <span class="d-none d-md-block">Edit</span></a> 
+                                <a href="#" class="btn btn-outline-danger btn-sm btn-sm-only-icon"><i class="mdi mdi-delete"></i> <span class="d-none d-md-block">Delete</span></a>
                             </div>
                         </div>
                     </div>
@@ -80,13 +65,28 @@
                 <div class="card mb-2 not-collapsed-border collapsed">
                     <div class="card-body py-2 px-3">
                         <div class="row align-items-center">
-                            <div class="col">
-                                <h6 class="text-dark text-break-line-1 mb-0"><i class="mdi mdi-folder text-muted mdi-18px mr-2"></i> Modern Golden Watch &nbsp;/&nbsp; <a href="#" class="text-primary">Blog</a></h6>
+                            <div class="col-12 col-sm col-md-8 col-lg col-xl-9 my-1">
+                                <h6 class="text-dark text-break-line-2 mb-0"><i class="mdi mdi-folder text-muted mdi-18px mr-2"></i> Modern Golden Watch &nbsp;/&nbsp; <a href="#" class="text-primary">Blog</a></h6>
                             </div>
 
-                            <div class="col text-right">
-                                <a href="#" class="btn btn-outline-primary btn-sm">Edit</a> 
-                                <a href="#" class="btn btn-outline-danger btn-sm">Delete</a>
+                            <div class="col-12 col-sm col-md-4 col-lg col-xl-3 my-1 text-right">
+                                <a href="#" class="btn btn-outline-primary btn-sm btn-sm-only-icon"><i class="mdi mdi-pencil"></i> <span class="d-none d-md-block">Edit</span></a> 
+                                <a href="#" class="btn btn-outline-danger btn-sm btn-sm-only-icon"><i class="mdi mdi-delete"></i> <span class="d-none d-md-block">Delete</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mb-2 not-collapsed-border collapsed">
+                    <div class="card-body py-2 px-3">
+                        <div class="row align-items-center">
+                            <div class="col-12 col-sm col-md-8 col-lg col-xl-9 my-1">
+                                <h6 class="text-dark text-break-line-2 mb-0"><i class="mdi mdi-folder text-muted mdi-18px mr-2"></i> Modern Golden Watch &nbsp;/&nbsp; <a href="#" class="text-primary">Blog</a></h6>
+                            </div>
+
+                            <div class="col-12 col-sm col-md-4 col-lg col-xl-3 my-1 text-right">
+                                <a href="#" class="btn btn-outline-primary btn-sm btn-sm-only-icon"><i class="mdi mdi-pencil"></i> <span class="d-none d-md-block">Edit</span></a> 
+                                <a href="#" class="btn btn-outline-danger btn-sm btn-sm-only-icon"><i class="mdi mdi-delete"></i> <span class="d-none d-md-block">Delete</span></a>
                             </div>
                         </div>
                     </div>
@@ -147,11 +147,11 @@
                             </div>
                         </div>
 
-                         <div class="col-12">
+                        <div class="col-12">
                             <div class="form-group">
                                 <label class="control-label">Category Image</label>
                                 <p class="text-muted">Upload image to your category or select from <a href="#" class="text-primary">Browse uploaded</a> or from <a href="#" class="text-primary">Media library</a></p>
-                                
+
                                 <button class="btn btn-outline-success btn-sm">UPLOAD</button>                                
                             </div>
                         </div>
@@ -173,7 +173,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="col-6">
+                                    <div class="col-sm-6">
                                         <div class="form-group">
                                             <label class="control-label">Can users create content <span class="help-tooltip" data-toggle="tooltip" title="Help tooltip"></span></label>
 
@@ -190,7 +190,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="col-6">
+                                    <div class="col-sm-6">
                                         <div class="form-group">
                                             <label class="control-label">Category subtype <span class="help-tooltip" data-toggle="tooltip" title="Help tooltip"></span></label>
 

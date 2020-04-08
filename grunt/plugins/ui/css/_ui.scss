@@ -275,6 +275,14 @@ textarea:not(.form-control){
     border-color: $primary;
 }
 
+.btn-outline-warning.active,
+.btn-outline-warning:hover,
+.btn-outline-warning:not(:disabled):not(.disabled):active, 
+.btn-outline-warning:not(:disabled):not(.disabled).active, 
+.show > .btn-outline-warning.dropdown-toggle {
+    color: $white;
+}
+
 .btn-warning,
 .btn-warning:hover,
 .btn-warning:focus,
@@ -768,6 +776,16 @@ body .bootstrap-select>select.mobile-device:focus+.dropdown-toggle{
         }
     }
 
+    @media screen and (max-width:575px){
+        .card-header{
+            flex-flow: column;
+
+            h1,h2,h3,h4,h5,h6{
+                margin-bottom: 10px;
+            }
+        }
+    }
+
     .card-body{
         padding: 15px 25px;
 
@@ -854,13 +872,24 @@ body .bootstrap-select>select.mobile-device:focus+.dropdown-toggle{
             left: auto;
             bottom: 0;
         }
+
         h1,h2,h3,h4,h5,h6{
             margin: 0;
         }
     }
+
     .card-body{
         padding: 25px 25px;
+    }
 
+    @media screen and (max-width:575px){
+        .card-header{
+            flex-flow: column;
+
+            h1,h2,h3,h4,h5,h6{
+                margin-bottom: 10px;
+            }
+        }
     }
 }
 
@@ -1183,5 +1212,39 @@ label.control-label{
         float: right;
         margin-top: -0.1em;
         margin-left: 0.2em;
+    }
+}
+
+.btn-only-icon{
+    @media screen and (max-width: 575px){
+        padding-left: 6px;
+        padding-right: 6px;
+    }
+}
+
+.btn-sm-only-icon{
+    @media screen and (max-width: 767px){
+        padding-left: 6px;
+        padding-right: 6px;
+    }
+}
+
+
+.btn-md-only-icon{
+    @media screen and (max-width: 991px){
+        padding-left: 6px;
+        padding-right: 6px;
+    }
+}
+.btn-lg-only-icon{
+    @media screen and (max-width: 1199px){
+        padding-left: 6px;
+        padding-right: 6px;
+    }
+}
+.btn-xl-only-icon{
+    @media screen and (min-width: 1200px){
+        padding-left: 6px;
+        padding-right: 6px;
     }
 }

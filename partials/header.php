@@ -27,7 +27,7 @@
                         </li>
 
                         <li class="mx-1 d-none d-md-block">
-                            <button type="button" class="btn btn-outline-secondary btn-rounded icon-right" data-toggle="dropdown">Add new <i class="mdi mdi-plus"></i></button>
+                            <button type="button" class="btn btn-outline-secondary btn-rounded btn-sm-only-icon" data-toggle="dropdown"><span class="d-none d-md-block">Add new</span> <i class="mdi mdi-plus"></i></button>
                             <div class="dropdown-menu ">
                                 <a class="dropdown-item" href="#">Post</a>
                                 <a class="dropdown-item" href="#">Product</a>
@@ -35,19 +35,21 @@
                         </li>
                     </ul>
 
-                    <ul class="nav px-3">
-                        <li class="mx-1 logo d-block d-md-none">
-                            <h5 class="text-white mr-3">
-                                <img src="assets/img/logo-mobile.svg" alt="Microweber" style="height: 40px;" />
-                            </h5>
-                        </li>
+                    <ul class="nav">
+                        <!--                        <li class="mx-1 logo d-block d-md-none">
+                                                    <h5 class="text-white mr-md-3">
+                                                        <img src="assets/img/logo-mobile.svg" alt="Microweber" style="height: 40px;" />
+                                                    </h5>
+                                                </li>-->
 
-                        <li class="mx-1"><a href="#" class="btn btn-link btn-rounded icon-left text-dark"><span class="badge badge-success badge-pill mr-2">4</span> <i class="mdi mdi-shopping text-muted"></i> New order</a></li>
+                        <li class="mx-1"><a href="#" class="btn btn-link btn-rounded icon-left text-dark px-0"><span class="badge badge-success badge-pill mr-2">4</span> <i class="mdi mdi-shopping text-muted"></i> <span class="d-none d-md-block">New order</span></a></li>
+                        <li class="mx-1"><a href="#" class="btn btn-link btn-rounded icon-left text-dark px-0"><span class="badge badge-success badge-pill mr-2">4</span> <i class="mdi mdi-comment-account text-muted"></i> <span class="d-none d-md-block">New comment</span></a></li>
+                        <!--<li class="mx-1"><a href="#" class="btn btn-link btn-rounded icon-left text-dark px-0"><span class="badge badge-success badge-pill mr-2">4</span> <i class="mdi mdi-bell text-muted"></i> <span class="d-none d-md-block">New notification</span></a></li>-->
                     </ul>
 
-                    <ul class="nav">
+                    <ul class="nav nav-last">
                         <li class="mx-1">
-                            <a href="#" class="btn btn-primary btn-rounded"><i class="mdi mdi-eye"></i> <span class="d-none d-md-block ml-1">Live edit</span></a>
+                            <a href="#" class="btn btn-primary btn-rounded btn-sm-only-icon"><i class="mdi mdi-eye-outline"></i> <span class="d-none d-md-block ml-1">Live edit</span></a>
                         </li>
 
                         <li class="mx-1 language-selector">
@@ -104,5 +106,19 @@
                         </div>
                     </li>
                     <li class="nav-item"><a href="#" class="nav-link"><i class="mdi mdi-power"></i> Log out</a></li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="javascript:;"><i class="mdi mdi-file-document"></i> Pages</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="dashboard.php">Dashboard</a>
+                            <a class="dropdown-item" href="categories.php">Categories</a>
+                            <a class="dropdown-item" href="categories_no.php">No categories</a>
+                            <a class="dropdown-item" href="products.php">Products</a>
+                            <a class="dropdown-item" href="products_no.php">No Products</a>
+                            <a class="dropdown-item" href="notifications.php">Notifications</a>
+                            <a class="dropdown-item" href="notifications_no.php">No notifications</a>
+                            <a class="dropdown-item" href="#">Separated link</a>
+                        </div>
+                    </li>
                 </ul>
             </aside>

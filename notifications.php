@@ -9,24 +9,24 @@
         </div>
         <div class="card-body">
             <div class="toolbar row mb-3">
-                <div class="col-12">
+                <div class="col-12 text-center text-sm-left">
                     <h5><strong>All Activities</strong></h5>
-                    <p>List of all notifications of your website. <a href="#" class="float-right">Show system log</a></p>
+                    <p>List of all notifications of your website. <a href="#" class="d-block d-sm-block float-sm-right">Show system log</a></p>
                 </div>
-                <div class="col-12 d-flex align-items-center justify-content-between">
-                    <div>
+                <div class="col-12 d-sm-flex align-items-center justify-content-between">
+                    <div class="text-center text-md-left my-2">
                         <div class="custom-control custom-checkbox d-inline-block mb-0 mr-3">
                             <input type="checkbox" class="custom-control-input" id="customCheck1" checked="">
                             <label class="custom-control-label" for="customCheck1">Select all</label>
                         </div>
 
-                        <button class="btn btn-outline-success btn-sm mr-3">Mark as read</button>
-                        <button class="btn btn-outline-warning btn-sm mr-3">Mark as unread</button>
-                        <button class="btn btn-outline-danger btn-sm mr-3">Delete selected</button>
+                        <button class="btn btn-outline-success btn-sm mr-1 mr-lg-2 btn-lg-only-icon"><i class="mdi mdi-email-open"></i> <span class="d-none d-xl-block">Mark as read</span></button>
+                        <button class="btn btn-outline-warning btn-sm mr-1 mr-lg-2 btn-lg-only-icon"><i class="mdi mdi-email"></i> <span class="d-none d-xl-block">Mark as unread</span></button>
+                        <button class="btn btn-outline-danger btn-sm mr-1 mr-lg-2 btn-lg-only-icon"><i class="mdi mdi-delete"></i> <span class="d-none d-xl-block">Delete selected</span></button>
                     </div>
 
-                    <div class="float-right">
-                        <span>Show notifications</span>
+                    <div class="float-sm-right text-center text-md-right my-2">
+                        <span class="d-inline d-sm-none d-md-inline">Show notifications</span>
                         <select class="selectpicker" data-style="btn-sm" data-width="auto">
                             <option>All notifications</option>
                             <option>Orders</option>

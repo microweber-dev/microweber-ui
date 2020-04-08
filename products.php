@@ -26,7 +26,7 @@
         </div>
         <div class="card-body pt-3">
             <div class="toolbar row mb-3">
-                <div class="col-6 d-flex align-items-center">
+                <div class="col-sm-6 d-flex align-items-center justify-content-center justify-content-sm-start my-1">
                     <div class="custom-control custom-checkbox mb-0">
                         <input type="checkbox" class="custom-control-input" id="check-all" checked>
                         <label class="custom-control-label" for="check-all">Check all</label>
@@ -40,7 +40,7 @@
                     </div>
                 </div>
 
-                <div class="col-6 text-right">
+                <div class="col-sm-6 text-right my-1 d-flex justify-content-center justify-content-sm-end">
                     <span>Sort by:</span>
                     <div class="d-inline-block mx-1">
                         <button type="button" class="btn btn-outline-secondary btn-sm icon-right">Date <i class="mdi mdi-chevron-up text-muted"></i></button>

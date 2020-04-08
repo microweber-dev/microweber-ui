@@ -7972,6 +7972,13 @@ textarea:not(.form-control) {
   background-color: #e1f1fd;
   border-color: #4592ff; }
 
+.btn-outline-warning.active,
+.btn-outline-warning:hover,
+.btn-outline-warning:not(:disabled):not(.disabled):active,
+.btn-outline-warning:not(:disabled):not(.disabled).active,
+.show > .btn-outline-warning.dropdown-toggle {
+  color: #fff; }
+
 .btn-warning,
 .btn-warning:hover,
 .btn-warning:focus,
@@ -8300,6 +8307,11 @@ body .bootstrap-select > select.mobile-device:focus + .dropdown-toggle {
       bottom: 0; }
     .card .card-header h1, .card .card-header h2, .card .card-header h3, .card .card-header h4, .card .card-header h5, .card .card-header h6 {
       margin: 0; }
+  @media screen and (max-width: 575px) {
+    .card .card-header {
+      flex-flow: column; }
+      .card .card-header h1, .card .card-header h2, .card .card-header h3, .card .card-header h4, .card .card-header h5, .card .card-header h6 {
+        margin-bottom: 10px; } }
   .card .card-body {
     padding: 15px 25px; }
   .card.not-collapsed-border {
@@ -8362,6 +8374,11 @@ body .bootstrap-select > select.mobile-device:focus + .dropdown-toggle {
       margin: 0; }
   .card.style-1 .card-body {
     padding: 25px 25px; }
+  @media screen and (max-width: 575px) {
+    .card.style-1 .card-header {
+      flex-flow: column; }
+      .card.style-1 .card-header h1, .card.style-1 .card-header h2, .card.style-1 .card-header h3, .card.style-1 .card-header h4, .card.style-1 .card-header h5, .card.style-1 .card-header h6 {
+        margin-bottom: 10px; } }
 
 .card-bubble {
   overflow: visible; }
@@ -8585,5 +8602,30 @@ label.control-label {
   float: right;
   margin-top: -0.1em;
   margin-left: 0.2em; }
+
+@media screen and (max-width: 575px) {
+  .btn-only-icon {
+    padding-left: 6px;
+    padding-right: 6px; } }
+
+@media screen and (max-width: 767px) {
+  .btn-sm-only-icon {
+    padding-left: 6px;
+    padding-right: 6px; } }
+
+@media screen and (max-width: 991px) {
+  .btn-md-only-icon {
+    padding-left: 6px;
+    padding-right: 6px; } }
+
+@media screen and (max-width: 1199px) {
+  .btn-lg-only-icon {
+    padding-left: 6px;
+    padding-right: 6px; } }
+
+@media screen and (min-width: 1200px) {
+  .btn-xl-only-icon {
+    padding-left: 6px;
+    padding-right: 6px; } }
 
 /*# sourceMappingURL=main.css.map */
