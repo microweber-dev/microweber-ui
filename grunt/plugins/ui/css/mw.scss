@@ -8,6 +8,10 @@ body{
     background-color: #f2f3f5;
 }
 
+.prevent-scroll{
+    overflow: hidden;
+}
+
 .container{
     /*max-width: 100%;*/
     @media screen and (max-width: 991px){
@@ -78,7 +82,8 @@ header{
 
 .main{
     display: flex;
-
+    overflow: hidden;
+        
     aside{
         width: 190px;
         float: left;
@@ -90,6 +95,7 @@ header{
             display: block;
             position: fixed;
             top: 0;
+            bottom: 0;
             left: -100%;
             height: 100%;
             width: 190px;
@@ -98,6 +104,7 @@ header{
             padding-top: 95px;
             padding-right: 15px;
             border-right: 1px solid #f2f3f5;
+            overflow-y: auto;
 
             &.opened{
                 left: 0;
@@ -113,7 +120,7 @@ header{
                 border-bottom-right-radius: 10px;
                 border: 1px solid transparent;
                 margin: 2px 0;
-                overflow: hidden;
+                /*overflow: hidden;*/
 
                 > a{
                     border-left: 5px solid transparent;
@@ -170,15 +177,19 @@ header{
                         color: $textGray;
                         border-left: 3px solid transparent;
 
+                        &:active{
+                            color: $white;
+                        }
+
                         .add-new{
                             width: 15px;
                             height: 15px;
                             text-align: center;
-                            padding: 0;
+                            padding: 0 0.5px;
                             float: right;
 
                             i{
-                                font-size: 10px;
+                                font-size: 12px;
                                 width: 10px;
                                 margin: 0;
                                 padding: 4px 0;
@@ -316,11 +327,25 @@ header{
     margin: 25px 0;
     max-width: 800px;
     margin: 0 auto;
+
+    @media screen and (max-width: 767px){
+        padding: 10px 15px 0 15px;
+        background-position: center bottom;
+    }
+
+    &.no-notifications{
+        @media screen and (min-width: 768px){
+            background-size: 50%;
+        }
+    }
 }
 
 .main:not(.show-sidebar-tree){
     .no-items-box{
         padding: 100px 50px;
+        @media screen and (max-width: 767px){
+            padding: 10px 15px 0 15px;
+        }
     }
 }
 

@@ -29,7 +29,7 @@
 
             <div class="row">
                 <div class="col-12">
-                    <div class="no-items-box" style="background-image: url('assets/img/no_notifications.svg'); background-size: 50%;">
+                    <div class="no-items-box no-notifications" style="background-image: url('assets/img/no_notifications.svg');">
                         <h4>You don't have any notifications</h4>
                         <p>Here you will be able to see notifications <br /> about orders, comments, email and others.</p>
                         <br />

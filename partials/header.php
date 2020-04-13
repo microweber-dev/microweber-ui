@@ -117,7 +117,6 @@
                             <a class="dropdown-item" href="products_no.php">No Products</a>
                             <a class="dropdown-item" href="notifications.php">Notifications</a>
                             <a class="dropdown-item" href="notifications_no.php">No notifications</a>
-                            <a class="dropdown-item" href="#">Separated link</a>
                         </div>
                     </li>
                 </ul>

@@ -201,6 +201,7 @@ textarea:not(.form-control){
 }
 
 .btn.no-hover.btn-outline-primary:hover {
+    color: $primary;
     background: transparent;
     border-color: $primary;
 }
@@ -406,17 +407,25 @@ body .bootstrap-select .dropdown-toggle:focus,
 body .bootstrap-select>select.mobile-device:focus+.dropdown-toggle{
     outline: none !important;
 }
+
 .bootstrap-select {
     &:focus-within,
         &:focus{
         outline: none !important;
     }
     .dropdown-toggle{
+        overflow: hidden;
         outline: none !important;
         &:focus-within,
             &:focus{
             outline: none !important;
         }
+
+        .filter-option-inner-inner, 
+        .filter-option{
+            overflow: visible !important;
+        }
+
     }
     .btn{
         padding-top:0.563rem;
@@ -1246,5 +1255,67 @@ label.control-label{
     @media screen and (min-width: 1200px){
         padding-left: 6px;
         padding-right: 6px;
+    }
+}
+
+.input-group{
+    .input-group-prepend{
+        .bootstrap-select .btn{
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+    }
+
+    .input-group-append{
+        .bootstrap-select .btn{
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+        }
+    }
+
+    .plus-minus-holder{
+        padding-top: 0;
+        padding-bottom: 0;
+        padding: 0;
+        display: flex;
+        flex-flow: column;
+        overflow: hidden;
+        .plus,
+        .minus{
+            height: 50%;
+            width: 100%;
+            border: 0;
+        }
+
+        .plus{
+            border-bottom: 0.5px solid;
+        }
+
+        button,a{
+            padding: 0px 8px;
+            outline: none !important;
+            box-shadow: none !important;
+        }
+    }
+}
+
+.bootstrap-select.btn-as-link:not(:hover):not(.show){
+    .btn{
+        border-color: transparent !important;
+        color: $primary;
+
+        &:after{
+            background-color: $primary;    
+        }
+    }
+}
+
+
+.tag{
+    &.tag-xs{
+        span{
+            padding-left: 5px;
+            padding-right: 5px;
+        }
     }
 }

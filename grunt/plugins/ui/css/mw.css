@@ -6,6 +6,9 @@ $border-radius-sm:            .2rem !default;*/
 body {
   background-color: #f2f3f5; }
 
+.prevent-scroll {
+  overflow: hidden; }
+
 .container {
   /*max-width: 100%;*/ }
   @media screen and (max-width: 991px) {
@@ -53,7 +56,8 @@ header {
       min-width: 173px; } }
 
 .main {
-  display: flex; }
+  display: flex;
+  overflow: hidden; }
   .main aside {
     width: 190px;
     float: left;
@@ -65,13 +69,15 @@ header {
         display: block;
         position: fixed;
         top: 0;
+        bottom: 0;
         left: -100%;
         height: 100%;
         width: 190px;
         float: none;
         padding-top: 95px;
         padding-right: 15px;
-        border-right: 1px solid #f2f3f5; }
+        border-right: 1px solid #f2f3f5;
+        overflow-y: auto; }
         .main aside.opened {
           left: 0; } }
     .main aside > ul > li.nav-item {
@@ -79,7 +85,7 @@ header {
       border-bottom-right-radius: 10px;
       border: 1px solid transparent;
       margin: 2px 0;
-      overflow: hidden; }
+      /*overflow: hidden;*/ }
       .main aside > ul > li.nav-item.show {
         border-radius: 10px; }
       .main aside > ul > li.nav-item > a {
@@ -125,14 +131,16 @@ header {
           text-overflow: ellipsis;
           color: #7e7e7e;
           border-left: 3px solid transparent; }
+          .main aside > ul > li.nav-item .dropdown-menu .dropdown-item:active {
+            color: #fff; }
           .main aside > ul > li.nav-item .dropdown-menu .dropdown-item .add-new {
             width: 15px;
             height: 15px;
             text-align: center;
-            padding: 0;
+            padding: 0 0.5px;
             float: right; }
             .main aside > ul > li.nav-item .dropdown-menu .dropdown-item .add-new i {
-              font-size: 10px;
+              font-size: 12px;
               width: 10px;
               margin: 0;
               padding: 4px 0;
@@ -223,9 +231,19 @@ header {
   margin: 25px 0;
   max-width: 800px;
   margin: 0 auto; }
+  @media screen and (max-width: 767px) {
+    .no-items-box {
+      padding: 10px 15px 0 15px;
+      background-position: center bottom; } }
+  @media screen and (min-width: 768px) {
+    .no-items-box.no-notifications {
+      background-size: 50%; } }
 
 .main:not(.show-sidebar-tree) .no-items-box {
   padding: 100px 50px; }
+  @media screen and (max-width: 767px) {
+    .main:not(.show-sidebar-tree) .no-items-box {
+      padding: 10px 15px 0 15px; } }
 
 .timeline .timeline-event .dot {
   width: 10px;

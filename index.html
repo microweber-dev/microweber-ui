@@ -548,12 +548,17 @@
                                     </div>
 
                                     <div class="my-3">
-                                        <div class="btn-group">
+                                        <div class="btn-group tag tag-xs">
                                             <span class="btn btn-primary btn-sm icon-left no-hover"><i class="mdi mdi-tag"></i> Tag</span>
                                             <button type="button" class="btn btn-primary btn-sm btn-icon"><i class="mdi mdi-close"></i></button>
                                         </div>
                                         &nbsp; &nbsp;
-                                        <div class="btn-group">
+                                        <div class="btn-group tag">
+                                            <span class="btn btn-primary btn-sm icon-left no-hover"><i class="mdi mdi-tag"></i> Tag</span>
+                                            <button type="button" class="btn btn-primary btn-sm btn-icon"><i class="mdi mdi-close"></i></button>
+                                        </div>
+                                        &nbsp; &nbsp;
+                                        <div class="btn-group tag">
                                             <span class="btn btn-primary icon-left no-hover"><i class="mdi mdi-tag"></i> Tag</span>
                                             <button type="button" class="btn btn-primary btn-icon"><i class="mdi mdi-close"></i></button>
                                         </div>
@@ -598,35 +603,35 @@
 
                                     <div class="my-3">
                                         <div class="btn-group btn-group-quantity">
-                                            <button type="button" class="btn btn-primary btn-sm btn-icon"><i class="mdi mdi-minus"></i></button>
+                                            <button type="button" class="btn btn-primary btn-sm btn-icon btn-minus"><i class="mdi mdi-minus"></i></button>
                                             <span class="btn btn-primary btn-sm icon-left no-hover qty-holder">
                                                 <input type="text" class="text-white" value="10"/>
                                             </span>
-                                            <button type="button" class="btn btn-primary btn-sm btn-icon"><i class="mdi mdi-plus"></i></button>
+                                            <button type="button" class="btn btn-primary btn-sm btn-icon btn-plus"><i class="mdi mdi-plus"></i></button>
                                         </div>
                                         &nbsp; &nbsp;
                                         <div class="btn-group btn-group-rounded btn-group-quantity">
-                                            <button type="button" class="btn btn-primary btn-sm btn-icon"><i class="mdi mdi-minus"></i></button>
+                                            <button type="button" class="btn btn-primary btn-sm btn-icon btn-minus"><i class="mdi mdi-minus"></i></button>
                                             <span class="btn btn-primary btn-sm icon-left no-hover qty-holder">
                                                 <input type="text" class="text-white" value="10"/>
                                             </span>
-                                            <button type="button" class="btn btn-primary btn-sm btn-icon"><i class="mdi mdi-plus"></i></button>
+                                            <button type="button" class="btn btn-primary btn-sm btn-icon btn-plus"><i class="mdi mdi-plus"></i></button>
                                         </div>
                                         &nbsp; &nbsp;
                                         <div class="btn-group btn-group-quantity">
-                                            <button type="button" class="btn btn-outline-secondary btn-sm btn-icon"><i class="mdi mdi-minus"></i></button>
+                                            <button type="button" class="btn btn-outline-secondary btn-sm btn-icon btn-minus"><i class="mdi mdi-minus"></i></button>
                                             <span class="btn btn-outline-secondary btn-sm icon-left no-hover qty-holder">
                                                 <input type="text" value="10"/>
                                             </span>
-                                            <button type="button" class="btn btn-outline-secondary btn-sm btn-icon"><i class="mdi mdi-plus"></i></button>
+                                            <button type="button" class="btn btn-outline-secondary btn-sm btn-icon btn-plus"><i class="mdi mdi-plus"></i></button>
                                         </div>
                                         &nbsp; &nbsp;
                                         <div class="btn-group btn-group-rounded btn-group-quantity">
-                                            <button type="button" class="btn btn-outline-secondary btn-sm btn-icon"><i class="mdi mdi-minus"></i></button>
+                                            <button type="button" class="btn btn-outline-secondary btn-sm btn-icon btn-minus"><i class="mdi mdi-minus"></i></button>
                                             <span class="btn btn-outline-secondary btn-sm icon-left no-hover qty-holder">
                                                 <input type="text" value="10"/>
                                             </span>
-                                            <button type="button" class="btn btn-outline-secondary btn-sm btn-icon"><i class="mdi mdi-plus"></i></button>
+                                            <button type="button" class="btn btn-outline-secondary btn-sm btn-icon btn-plus"><i class="mdi mdi-plus"></i></button>
                                         </div>
                                     </div>
                                 </div>
@@ -1348,6 +1353,83 @@
                                 <br/>
                                 <br/>
                             </div>
+
+                            <div class="mb-5">
+                                <h3>New components</h3>
+
+                                <div class="row">
+                                    <div class="col-lg-3 my-1">
+                                        <label>Dropdown as Link</label>
+                                        <div>
+                                            <select class="selectpicker btn-as-link" data-width="auto">
+                                                <option>Mustard</option>
+                                                <option>Ketchup</option>
+                                                <option>Barbecue</option>
+                                                <option>Tent</option>
+                                                <option>Flashlight</option>
+                                                <option>Toilet Paper</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 my-1">
+                                        <label>Quantity</label>
+                                        <div class="form-group">
+                                            <div class="input-group mb-3 prepend-transparent append-transparent input-group-quantity">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text text-muted">BGN</span>
+                                                </div>
+                                                <input type="text" class="form-control" value="0.00" />
+                                                <div class="input-group-append">
+                                                    <div class="input-group-text plus-minus-holder">
+                                                        <button type="button" class="plus"><i class="mdi mdi-menu-up"></i></button>
+                                                        <button type="button" class="minus"><i class="mdi mdi-menu-down"></i></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <div class="input-group mb-3 append-transparent">
+                                                <input type="text" class="form-control" value="3.0">
+                                                <div class="input-group-append">
+                                                    <span style="width:70px;">   
+                                                        <select class="selectpicker" data-width="100%">
+                                                            <option>kg</option>
+                                                            <option>lb</option>
+                                                            <option>oz</option>
+                                                            <option>g</option>
+                                                        </select>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 my-1">
+                                        <label>Pricing</label>
+
+                                        <div class="form-group">
+                                            <div class="input-group mb-3 prepend-transparent">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text text-muted">BGN</span>
+                                                </div>
+                                                <input type="text" class="form-control" value="0.00" />
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <div class="input-group mb-3 prepend-transparent append-transparent">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text text-muted">BGN</span>
+                                                </div>
+                                                <input type="text" class="form-control" value="0.00" />
+                                                <div class="input-group-append">
+                                                    <span class="input-group-text" data-toggle="tooltip" title="To put a product on sale, makeCompare at price the original price and enter the lower amount into Price."><i class="mdi mdi-help-circle"></i></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
@@ -2004,7 +2086,7 @@
         <script src="grunt/dist/plugins/js/plugins.js"></script>
         <script>
             $(document).ready(function () {
-
+               
             });
         </script>
 

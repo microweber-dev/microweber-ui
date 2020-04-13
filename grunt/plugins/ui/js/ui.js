@@ -34,4 +34,40 @@ $(document).ready(function () {
         var color = $(this).find('option:selected').data('change-color');
         $(this).find('.dropdown-toggle').removeClass('btn-primary btn-secondary btn-success btn-warning btn-danger').addClass(color);
     });
+
+    $(".btn-minus", '.btn-group-quantity').on("click", function (m) {
+        var i = $(this).parent().find('input[type="text"]');
+        if (i.val() <= 1) {
+            i.val("1").change();
+        } else {
+            var l = i.val() - 1;
+            i.val(l).change();
+        }
+    });
+
+    $(".btn-plus", '.btn-group-quantity').on("click", function (m) {
+        var i = $(this).parent().find('input[type="text"]');
+        if (i.val() <= 100) {
+            var l = +i.val() + +1;
+            i.val(l).change();
+        }
+    });
+
+    $(".minus", '.input-group-quantity').on("click", function (m) {
+        var i = $(this).parent().parent().parent().find('input[type="text"]');
+        if (i.val() <= 1) {
+            i.val("1").change();
+        } else {
+            var l = i.val() - 1;
+            i.val(l).change();
+        }
+    });
+
+    $(".plus", '.input-group-quantity').on("click", function (m) {
+        var i = $(this).parent().parent().parent().find('input[type="text"]');
+        if (i.val() <= 100) {
+            var l = +i.val() + +1;
+            i.val(l).change();
+        }
+    });
 });
