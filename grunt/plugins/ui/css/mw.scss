@@ -83,7 +83,7 @@ header{
 .main{
     display: flex;
     overflow: hidden;
-        
+
     aside{
         width: 190px;
         float: left;
@@ -561,5 +561,27 @@ header{
     @media screen and (max-width: 575px){
 
 
+    }
+}
+
+
+.moveable{
+    padding-left: 25px;
+    &:before{
+        color:$silver;
+        font-size: 20px;
+        content: "\F0041";
+        font-family: "Material Design Icons";
+        display: flex;
+        height: 100%;
+        align-items: center;
+        justify-content: flex-start;
+        position: absolute;
+        left: 10px;
+        opacity: 0;
+    }
+
+    &:hover:before{
+        opacity: 1;
     }
 }
