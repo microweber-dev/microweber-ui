@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="grunt/plugins/ui/css/main_with_mw.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.4.6/css/flag-icon.min.css"/>
 
+    <link rel="stylesheet" href="assets/ui/plugins/css/plugins.min.css"/>
 
-    <script src="grunt/plugins/jquery-3.4.1.min.js"></script>
+    <script src="assets/ui/plugins/js/jquery-3.6.0.min.js"></script>
 </head>
 <body class="">

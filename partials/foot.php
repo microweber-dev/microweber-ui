@@ -1,7 +1,7 @@
 
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="grunt/plugins/bootstrap/js/bootstrap.js"></script>
+<script src="assets/ui/plugins/js/plugins.js"></script>
 <script>
     $(document).ready(function () {
         $('.dropdown .dropdown-toggle', 'aside').on('click', function () {
