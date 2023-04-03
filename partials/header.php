@@ -1,21 +1,4 @@
-<!doctype html>
-<html lang="en">
-    <head>
-        <!-- Required meta tags -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-        <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="grunt/plugins/ui/css/main.css">
-        <link rel="stylesheet" href="grunt/dist/plugins/css/plugins.min.css"/>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.4.6/css/flag-icon.min.css"/>
-        <link rel="stylesheet" href="grunt/plugins/ui/css/mw.css">
-
-        <!--<title>Hello, world!</title>-->
-
-        <script src="grunt/plugins/jquery-3.4.1.min.js"></script>
-    </head>
-    <body class="">
+<?php include 'partials/head.php' ?>
         <header class="position-sticky sticky-top bg-white">
             <div class="container">
                 <div class="d-flex justify-content-between align-items-center py-1">
