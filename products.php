@@ -68,7 +68,7 @@
 
                             <div class="col item-image">
                                 <div class="position-absolute text-muted" style="z-index: 1; right: 0; top: -10px;">
-                                    <i class="mdi mdi-shopping mdi-18px" data-toggle="tooltip" title="Продукт"></i>
+                                    <i class="mdi mdi-shopping mdi-18px" data-bg-toggle="tooltip" title="Продукт"></i>
                                 </div>
                                 <div class="img-circle-holder border-radius-0 border-0">
                                     <img src="https://cdn.vox-cdn.com/thumbor/uejBZCud-JlRsCn5w26ltmfdGFs=/0x0:675x450/1200x800/filters:focal(284x171:392x279)/cdn.vox-cdn.com/uploads/chorus_image/image/66466293/Untitled_3.0.jpg" />
@@ -108,7 +108,7 @@
 
                             <div class="col" style="min-width: 120px;">
                                 <div class="position-absolute text-muted" style="z-index: 1; right: 0; top: -10px;">
-                                    <i class="mdi mdi-shopping mdi-18px" data-toggle="tooltip" title="Продукт"></i>
+                                    <i class="mdi mdi-shopping mdi-18px" data-bg-toggle="tooltip" title="Продукт"></i>
                                 </div>
                                 <div class="img-circle-holder border-radius-0 border-0">
                                     <img src="https://cdn.vox-cdn.com/thumbor/uejBZCud-JlRsCn5w26ltmfdGFs=/0x0:675x450/1200x800/filters:focal(284x171:392x279)/cdn.vox-cdn.com/uploads/chorus_image/image/66466293/Untitled_3.0.jpg" />
@@ -147,7 +147,7 @@
 
                             <div class="col" style="min-width: 120px;">
                                 <div class="position-absolute text-muted" style="z-index: 1; right: 0; top: -10px;">
-                                    <i class="mdi mdi-shopping mdi-18px" data-toggle="tooltip" title="Продукт"></i>
+                                    <i class="mdi mdi-shopping mdi-18px" data-bg-toggle="tooltip" title="Продукт"></i>
                                 </div>
                                 <div class="img-circle-holder border-radius-0 border-0">
                                     <i class="mdi mdi-shopping mdi-64px text-muted"></i>

@@ -185,7 +185,7 @@
                             <label class="control-label">Other settings</label>
                             <p class="text-muted">Discover more advanced options </p>
 
-                            <button class="btn btn-outline-secondary btn-sm btn-rounded" data-toggle="collapse" data-target="#show-more">Show more</button>
+                            <button class="btn btn-outline-secondary btn-sm btn-rounded" data-bg-toggle="collapse" data-target="#show-more">Show more</button>
 
                             <div class="collapse mt-3" id="show-more">
                                 <div class="row">
@@ -200,7 +200,7 @@
 
                                     <div class="col-sm-6">
                                         <div class="form-group">
-                                            <label class="control-label">Can users create content <span class="help-tooltip" data-toggle="tooltip" title="Help tooltip"></span></label>
+                                            <label class="control-label">Can users create content <span class="help-tooltip" data-bg-toggle="tooltip" title="Help tooltip"></span></label>
 
                                             <div>
                                                 <div class="custom-control custom-radio d-inline-block mr-3">
@@ -217,7 +217,7 @@
 
                                     <div class="col-sm-6">
                                         <div class="form-group">
-                                            <label class="control-label">Category subtype <span class="help-tooltip" data-toggle="tooltip" title="Help tooltip"></span></label>
+                                            <label class="control-label">Category subtype <span class="help-tooltip" data-bg-toggle="tooltip" title="Help tooltip"></span></label>
 
                                             <div>
                                                 <select class="selectpicker" data-width="100%">
